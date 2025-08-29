@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>EcoTroca</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Ícones de favoritos do site -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fontes utilizadas no site (Roboto, Montserrat e Poppins) -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Arquivos de estilo dos fornecedores externos (Bootstrap, ícones, efeitos, etc) -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Estilos principais personalizados do site EcoTroca -->
+  <link href="assets/css/main.css" rel="stylesheet">
+</head>
+
+<body class="index-page">
+
+  <!-- Cabeçalho fixo com informações de contato e redes sociais -->
+  <header id="header" class="header fixed-top">
+
+    <!-- Barra superior com email e telefone -->
+    <div class="topbar d-flex align-items-center">
+      <div class="container d-flex justify-content-center justify-content-md-between">
+        <div class="contact-info d-flex align-items-center">
+          <i class="bi bi-envelope d-flex align-items-center"><a href="mailto:contact@example.com">ecotroca@gmail.com</a></i>
+          <i class="bi bi-phone d-flex align-items-center ms-4"><span>+55 61 9 9182-37081</span></i>
+        </div>
+        <!-- Links para redes sociais da EcoTroca -->
+        <div class="social-links d-none d-md-flex align-items-center">
+          <a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a>
+          <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+          <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+          <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+        </div>
+      </div>
+    </div><!-- Fim da barra superior -->
+
+    <!-- Menu com logotipo e navegação -->
+    <div class="branding d-flex align-items-cente">
+      <div class="container position-relative d-flex align-items-center justify-content-between">
+        <!-- Logo com nome do site -->
+        <a href="index.html" class="logo d-flex align-items-center">
+          <h1 class="sitename">EcoTroca</h1>
+          <span>.</span>
+        </a>
+
+        <!-- Menu de navegação -->
+        <nav id="navmenu" class="navmenu">
+          <ul>
+            <li><a href="#hero" class="active">Inicio</a></li>
+            <li><a href="#about">Sobre Nós</a></li>
+            <li><a href="#produtos">Produtos</a></li>
+            <li><a href="#team">Colaboradores</a></li>
+            <li><a href="#contact">Contato</a></li>
+          </ul>
+          <!-- Botão de menu para mobile -->
+          <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Seção principal de introdução (destaque do site) -->
+    <section id="hero" class="hero section accent-background">
+      <div class="container position-relative" data-aos="fade-up" data-aos-delay="100">
+        <div class="row gy-5 justify-content-between">
+
+          <!-- Mensagem principal e chamada para ação -->
+          <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center">
+            <h2><span>SALVE O </span><span class="accent">FUTURO COM A ECOTROCA</span></h2>
+            <p>Modelo novo de comércio no mercado, prezando e inovando o futuro. De forma ecológica e repensando a ideia da utilidade.</p>
+            <div class="d-flex">
+              <a href="#about" class="btn-get-started">Conheça Nosso Trabalho</a>
+              <!-- Vídeo de apresentação sobre meio ambiente -->
+              <a href="https://youtu.be/tjJvL8FP1IU?si=V0ReqK0i8hAShaaD" class="glightbox btn-watch-video d-flex align-items-center"><i class="bi bi-play-circle"></i><span>Curta Metragem Sobre o Meio Ambiente</span></a>
+            </div>
+          </div>
+
+          <!-- Imagem ilustrativa principal -->
+          <div class="col-lg-5 order-1 order-lg-2">
+            <img src="assets/img/hero-img.svg" class="img-fluid" alt="">
+          </div>
+        </div>
+      </div>
+
+      <!-- Blocos com valores e pilares do projeto -->
+      <div class="icon-boxes position-relative" data-aos="fade-up" data-aos-delay="200">
+        <div class="container position-relative">
+          <div class="row gy-4 mt-5">
+
+            <!-- Bloco: Alcançar mais pessoas -->
+            <div class="col-xl-3 col-md-6">
+              <div class="icon-box">
+                <div class="icon"><i class="bi bi-easel"></i></div>
+                <h4 class="title"><a href="" class="stretched-link">Buscamos Maior Alcançe</a></h4>
+              </div>
+            </div>
+
+            <!-- Bloco: Valores da troca e colaboração -->
+            <div class="col-xl-3 col-md-6">
+              <div class="icon-box">
+                <div class="icon"><i class="bi bi-gem"></i></div>
+                <h4 class="title"><a href="" class="stretched-link">Agregar Grandes Valores</a></h4>
+              </div>
+            </div>
+
+            <!-- Bloco: Visão global da EcoTroca -->
+            <div class="col-xl-3 col-md-6">
+              <div class="icon-box">
+                <div class="icon"><i class="bi bi-geo-alt"></i></div>
+                <h4 class="title"><a href="" class="stretched-link">Expandir para o Mundo</a></h4>
+              </div>
+            </div>
+
+            <!-- Bloco: Integração entre tecnologia e meio ambiente -->
+            <div class="col-xl-3 col-md-6">
+              <div class="icon-box">
+                <div class="icon"><i class="bi bi-command"></i></div>
+                <h4 class="title"><a href="" class="stretched-link">Ecologia e Tecnologia</a></h4>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section><!-- Fim da Seção Hero -->
+
+    <!-- Seção "Sobre Nós" com explicação da proposta da EcoTroca -->
+    <section id="about" class="about section">
+
+      <!-- Título da seção -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Quem Somos?</h2>
+        <p>SOMOS A NOVIDADE E A REVOLUÇÃO DO MERCADO DE TROCAS E NEGÓCIOS</p>
+      </div>
+
+      <div class="container">
+        <div class="row gy-4">
+
+          <!-- Parte com imagem e frase de impacto -->
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <img src="assets/img/about.jpg" class="img-fluid rounded-4 mb-4" alt="">
+            <p>"Desapegar é dar uma nova vida ao que já serviu. Troque. Reuse. Renove o mundo."</p>
+            <p>Vivemos em um mundo onde o consumo desenfreado transformou o novo em algo descartável e o útil em algo passageiro, mas aqui, na EcoTroca, acreditamos em um caminho diferente, onde cada objeto carrega histórias, tem valor e pode continuar sendo útil — mesmo quando sai das suas mãos. Desapegar não é jogar fora; é permitir que algo continue seu ciclo nas mãos de outra pessoa, é dar uma nova chance, uma nova função, um novo lar para aquilo que já serviu — e ainda pode servir. Ao trocar, você não apenas liberta espaço físico, mas também contribui com uma mentalidade mais consciente e sustentável; ao reutilizar, você participa de uma economia circular que respeita o planeta; e ao renovar o mundo, você inspira outras pessoas a fazerem o mesmo. Troque. Reuse. Renove. Porque pequenas ações, quando feitas com propósito, transformam realidades, e toda transformação começa com uma escolha.</p>
+          </div>
+
+          <!-- Parte com texto descritivo, lista e vídeo adicional -->
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="250">
+            <div class="content ps-0 ps-lg-5">
+              <p class="fst-italic">Trocar é transformar. Reciclar é recomeçar. Reusar é cuidar.</p>
+              <ul>
+                <li><i class="bi bi-check-circle-fill"></i> <span>Variedades de produtos disponíveis para troca.</span></li>
+                <li><i class="bi bi-check-circle-fill"></i> <span>Contato com ONG's e usuários com ideias sustentáveis.</span></li>
+                <li><i class="bi bi-check-circle-fill"></i> <span>Unir forças para um planeta mais verde.</span></li>
+              </ul>
+              <p>Plataformas como o Enjoei, o Repassa e a TROC também trabalham com o reaproveitamento de roupas e acessórios, dando nova vida a peças que, de outra forma, estariam paradas ou descartadas. Já iniciativas como o OLX e o EcoTroca de Livros promovem trocas e vendas diretas entre pessoas, incentivando o consumo consciente e a reutilização de produtos. Além delas, marcas maiores têm incorporado a lógica da economia circular, como a Patagonia, que oferece serviços de reparo e recompra de produtos usados, ou a IKEA, que incentiva a devolução de móveis antigos para reciclagem ou revenda.</p>
+
+              <!-- Vídeo sobre o propósito da EcoTroca -->
+              <div class="position-relative mt-4">
+                <img src="assets/img/about-2.jpg" class="img-fluid rounded-4" alt="">
+                <a href="https://youtu.be/0wQKC1-VuFc?si=sWrL2Y8PiXuQtPW_" class="glightbox pulsating-play-btn"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- Fim da Seção Sobre Nós -->
+
+<!-- Seção Produtos -->
+<section id="produtos" class="produtos section">
+  <!-- Fonte Poppins -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+  
+  <!-- Estilos -->
+  <style>
+    .produtos-info p,
+    .section-title p {
+      font-family: 'Poppins', sans-serif;
+      font-size: 1rem;
+      font-weight: 500;
+      color: #333;
+      text-align: center;
+      margin-top: 10px;
+    }
+  </style>
+
+  <!-- Título da Seção -->
+  <div class="container section-title" data-aos="fade-up">
+    <h2>Produtos</h2>
+    <p>CONFIRA NOSSOS ITENS PARA NEGÓCIOS E TROCAS</p>
+  </div>
+
+  <!-- Lista de Produtos -->
+  <div class="container">
+    <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+      <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
+        <!-- Aqui vão os itens dos produtos, como já está implementado -->
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="container">
+<!-- ===================== Seção de Produtos ===================== -->
+<section id="produtos" class="produtos-section" style="padding: 40px 0;">
+  <div class="container">
+
+    <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
+
+      <!-- Produto 1 -->
+      <div class="col-lg-4 col-md-6 produtos-item isotope-item filter-app">
+        <div class="produtos-content h-100">
+          <a href="produtos.html#produto1">
+            <img src="assets/img/produtos/acessorio-1.jpg" class="img-fluid" alt="Óculos Ray Ban Aviador">
+          </a>
+          <div class="produtos-info" style="margin-top: 10px;">
+            <p>Óculos Ray Ban Aviador</p>
+          </div>
+        </div>
+      </div><!-- Fim Produto -->
+
+      <!-- Produto 2 -->
+      <div class="col-lg-4 col-md-6 produtos-item isotope-item filter-product">
+        <div class="produtos-content h-100">
+          <a href="produtos.html#produto2">
+            <img src="assets/img/produtos/acessorio-2.jpg" class="img-fluid" alt="Relógio Feminino Champion">
+          </a>
+          <div class="produtos-info" style="margin-top: 10px;">
+            <p>Relógio Feminino Champion</p>
+          </div>
+        </div>
+      </div><!-- Fim Produto -->
+
+      <!-- Produto 3 -->
+      <div class="col-lg-4 col-md-6 produtos-item isotope-item filter-branding">
+        <div class="produtos-content h-100">
+          <a href="produtos.html#produto3">
+            <img src="assets/img/produtos/acessorio-3.jpg" class="img-fluid" alt="Capacete LS2 Sem Uso">
+          </a>
+          <div class="produtos-info" style="margin-top: 10px;">
+            <p>Capacete LS2 Sem Uso</p>
+          </div>
+        </div>
+      </div><!-- Fim Produto -->
+
+      <!-- Produto 4 -->
+      <div class="col-lg-4 col-md-6 produtos-item isotope-item filter-books">
+        <div class="produtos-content h-100">
+          <a href="produtos.html#produto4">
+            <img src="assets/img/produtos/casa-1.jpg" class="img-fluid" alt="Guarda Roupa com Espelho">
+          </a>
+          <div class="produtos-info" style="margin-top: 10px;">
+            <p>Guarda Roupa com Espelho</p>
+          </div>
+        </div>
+      </div><!-- Fim Produto -->
+
+      <!-- Produto 5 -->
+      <div class="col-lg-4 col-md-6 produtos-item isotope-item filter-app">
+        <div class="produtos-content h-100">
+          <a href="produtos.html#produto5">
+            <img src="assets/img/produtos/casa-2.jpg" class="img-fluid" alt="Mesa e Conjunto de Cadeiras em Ótimo Estado">
+          </a>
+          <div class="produtos-info" style="margin-top: 10px;">
+            <p>Mesa e Conjunto de Cadeiras em Ótimo Estado</p>
+          </div>
+        </div>
+      </div><!-- Fim Produto -->
+
+      <!-- Produto 6 -->
+      <div class="col-lg-4 col-md-6 produtos-item isotope-item filter-product">
+        <div class="produtos-content h-100">
+          <a href="produtos.html#produto6">
+            <img src="assets/img/produtos/casa-3.jpg" class="img-fluid" alt="Forno Elétrico Electrolux">
+          </a>
+          <div class="produtos-info" style="margin-top: 10px;">
+            <p>Forno Elétrico Electrolux</p>
+          </div>
+        </div>
+      </div><!-- Fim Produto -->
+
+      <!-- Produto 7 -->
+      <div class="col-lg-4 col-md-6 produtos-item isotope-item filter-branding">
+        <div class="produtos-content h-100">
+          <a href="produtos.html#produto7">
+            <img src="assets/img/produtos/moda-1.jpg" class="img-fluid" alt="Bota Feminina Sem Uso">
+          </a>
+          <div class="produtos-info" style="margin-top: 10px;">
+            <p>Bota Feminina Sem Uso</p>
+          </div>
+        </div>
+      </div><!-- Fim Produto -->
+
+      <!-- Produto 8 -->
+      <div class="col-lg-4 col-md-6 produtos-item isotope-item filter-books">
+        <div class="produtos-content h-100">
+          <a href="produtos.html#produto8">
+            <img src="assets/img/produtos/moda-2.jpg" class="img-fluid" alt="Jaquetinha de Bebê de Até 8 Meses">
+          </a>
+          <div class="produtos-info" style="margin-top: 10px;">
+            <p>Jaquetinha de Bebê de Até 8 Meses</p>
+          </div>
+        </div>
+      </div><!-- Fim Produto -->
+
+      <!-- Produto 9 -->
+      <div class="col-lg-4 col-md-6 produtos-item isotope-item filter-app">
+        <div class="produtos-content h-100">
+          <a href="produtos.html#produto9">
+            <img src="assets/img/produtos/moda-3.jpg" class="img-fluid" alt="Camisa Air Jordan de Manga Longa">
+          </a>
+          <div class="produtos-info" style="margin-top: 10px;">
+            <p>Camisa Air Jordan de Manga Longa</p>
+          </div>
+        </div>
+      </div><!-- Fim Produto -->
+
+      <!-- Produto 10 -->
+      <div class="col-lg-4 col-md-6 produtos-item isotope-item filter-product">
+        <div class="produtos-content h-100">
+          <a href="produtos.html#produto10">
+            <img src="assets/img/produtos/tec-1.jpg" class="img-fluid" alt="Pc Gamer Sem Placa de Video">
+          </a>
+          <div class="produtos-info" style="margin-top: 10px;">
+            <p>Pc Gamer Sem Placa de Video</p>
+          </div>
+        </div>
+      </div><!-- Fim Produto -->
+
+      <!-- Produto 11 -->
+      <div class="col-lg-4 col-md-6 produtos-item isotope-item filter-branding">
+        <div class="produtos-content h-100">
+          <a href="produtos.html#produto11">
+            <img src="assets/img/produtos/tec-2.jpg" class="img-fluid" alt="Iphone 7 para Retirada de Peças">
+          </a>
+          <div class="produtos-info" style="margin-top: 10px;">
+            <p>Iphone 7 para Retirada de Peças</p>
+          </div>
+        </div>
+      </div><!-- Fim Produto -->
+
+      <!-- Produto 12 -->
+      <div class="col-lg-4 col-md-6 produtos-item isotope-item filter-books">
+        <div class="produtos-content h-100">
+          <a href="produtos.html#produto12">
+            <img src="assets/img/produtos/tec-3.jpg" class="img-fluid" alt="Ps3 Slim com 1 Controle">
+          </a>
+          <div class="produtos-info" style="margin-top: 10px;">
+            <p>Ps3 Slim com 1 Controle</p>
+          </div>
+        </div>
+      </div><!-- Fim Produto -->
+
+    </div><!-- Fim do Container de Produtos -->
+  </div>
+</section>
+<!-- ===================== Fim da Seção de Produtos ===================== -->
+
+<!-- ===================== Seção do Time ===================== -->
+<section id="team" class="team section">
+
+  <!-- Título da Seção -->
+  <div class="container section-title" data-aos="fade-up">
+    <h2>Nosso Time</h2>
+    <p>CONHEÇA OS "CABEÇAS" DA ECOTROCA</p>
+  </div><!-- Fim do Título -->
+
+  <div class="container">
+    <div class="row gy-4">
+
+      <!-- Membro 1 -->
+      <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="100">
+        <div class="member">
+          <img src="assets/img/team/team-1.jpg" class="img-fluid" alt="">
+          <h4>Jefferson</h4>
+          <span>Sócio</span>
+          <div class="social">
+            <a href=""><i class="bi bi-twitter-x"></i></a>
+            <a href=""><i class="bi bi-facebook"></i></a>
+            <a href=""><i class="bi bi-instagram"></i></a>
+            <a href=""><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+      </div><!-- Fim Membro -->
+
+      <!-- Membro 2 -->
+      <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="200">
+        <div class="member">
+          <img src="assets/img/team/team-2.jpg" class="img-fluid" alt="">
+          <h4>João Flausino</h4>
+          <span>Sócio</span>
+          <div class="social">
+            <a href=""><i class="bi bi-twitter-x"></i></a>
+            <a href=""><i class="bi bi-facebook"></i></a>
+            <a href=""><i class="bi bi-instagram"></i></a>
+            <a href=""><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+      </div><!-- Fim Membro -->
+
+      <!-- Membro 3 -->
+      <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="300">
+        <div class="member">
+          <img src="assets/img/team/team-3.jpg" class="img-fluid" alt="">
+          <h4>João Morais</h4>
+          <span>Sócio</span>
+          <div class="social">
+            <a href=""><i class="bi bi-twitter-x"></i></a>
+            <a href=""><i class="bi bi-facebook"></i></a>
+            <a href=""><i class="bi bi-instagram"></i></a>
+            <a href=""><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+      </div><!-- Fim Membro -->
+
+      <!-- Membro 4 -->
+      <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="400">
+        <div class="member">
+          <img src="assets/img/team/team-4.jpg" class="img-fluid" alt="">
+          <h4>Lucas</h4>
+          <span>Sócio</span>
+          <div class="social">
+            <a href=""><i class="bi bi-twitter-x"></i></a>
+            <a href=""><i class="bi bi-facebook"></i></a>
+            <a href=""><i class="bi bi-instagram"></i></a>
+            <a href=""><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+      </div><!-- Fim Membro -->
+
+    </div>
+  </div>
+
+</section><!-- ===================== Fim da Seção do Time ===================== -->
+
+<!-- Seção de Contato -->
+<section id="contact" class="contact section">
+
+  <!-- Título da Seção -->
+  <div class="container section-title" data-aos="fade-up">
+    <h2>Contatos</h2>
+    <p>FALE DIRETAMENTE CONOSCO</p>
+  </div><!-- Fim do Título da Seção -->
+
+  <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+    <div class="row gx-lg-0 gy-4">
+
+      <!-- Informações de Contato -->
+      <div class="col-lg-4">
+        <div class="info-container d-flex flex-column align-items-center justify-content-center">
+
+          <!-- Item: Endereço -->
+          <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="200">
+            <i class="bi bi-geo-alt flex-shrink-0"></i>
+            <div>
+              <h3>Endereço</h3>
+              <p>Universidade Católica de Brasília - DF</p>
+            </div>
+          </div><!-- Fim do Item Endereço -->
+
+          <!-- Item: Telefone -->
+          <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
+            <i class="bi bi-telephone flex-shrink-0"></i>
+            <div>
+              <h3>Telefone</h3>
+              <p>+55 61 9 9182-37081</p>
+            </div>
+          </div><!-- Fim do Item Telefone -->
+
+          <!-- Item: Email -->
+          <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
+            <i class="bi bi-envelope flex-shrink-0"></i>
+            <div>
+              <h3>Email</h3>
+              <p>ecotroca@gmail.com</p>
+            </div>
+          </div><!-- Fim do Item Email -->
+
+          <!-- Item: Funcionamento -->
+          <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="500">
+            <i class="bi bi-clock flex-shrink-0"></i>
+            <div>
+              <h3>Funcionamento</h3>
+              <p>Segunda - Sexta: 09h - 17h</p>
+            </div>
+          </div><!-- Fim do Item Funcionamento -->
+
+        </div>
+      </div><!-- Fim da Coluna de Informações -->
+
+      <!-- Formulário de Contato -->
+      <div class="col-lg-8">
+        <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade" data-aos-delay="100">
+          <div class="row gy-4">
+
+            <div class="col-md-6">
+              <input type="text" name="name" class="form-control" placeholder="Seu Nome" required="">
+            </div>
+
+            <div class="col-md-6 ">
+              <input type="email" class="form-control" name="email" placeholder="Seu Email" required="">
+            </div>
+
+            <div class="col-md-12">
+              <input type="text" class="form-control" name="subject" placeholder="Assunto" required="">
+            </div>
+
+            <div class="col-md-12">
+              <textarea class="form-control" name="message" rows="8" placeholder="Mensagem" required=""></textarea>
+            </div>
+
+            <div class="col-md-12 text-center">
+              <div class="loading">Carregando...</div>
+              <div class="error-message"></div>
+              <div class="sent-message">Enviada com Sucesso. Muito Obrigado!</div>
+
+              <button type="submit">Enviar</button>
+            </div>
+
+          </div>
+        </form>
+      </div><!-- Fim do Formulário de Contato -->
+
+    </div>
+
+  </div>
+
+</section><!-- Fim da Seção de Contato -->
+
+</main>
+
+<!-- Rodapé -->
+<footer id="footer" class="footer accent-background">
+
+  <style>
+    .footer {
+      font-family: 'Poppins', sans-serif;
+    }
+  </style>
+
+  <div class="container footer-top">
+    <div class="row gy-4">
+
+      <!-- Sobre o Projeto -->
+      <div class="col-lg-5 col-md-12 footer-about">
+        <a href="index.html" class="logo d-flex align-items-center">
+          <span class="sitename">EcoTroca</span>
+        </a>
+        <p>A EcoTroca é uma loja que acredita que pequenas atitudes podem transformar o mundo. Aqui, incentivamos a troca consciente de produtos, reduzindo o desperdício e promovendo a reutilização. Ao escolher trocar em vez de descartar, você contribui diretamente para a preservação do meio ambiente, diminui a geração de lixo e ajuda a construir um futuro mais sustentável para todos. Juntos, podemos salvar o planeta, um gesto de cada vez!</p>
+        <div class="social-links d-flex mt-4">
+          <a href=""><i class="bi bi-twitter-x"></i></a>
+          <a href=""><i class="bi bi-facebook"></i></a>
+          <a href=""><i class="bi bi-instagram"></i></a>
+          <a href=""><i class="bi bi-linkedin"></i></a>
+        </div>
+      </div><!-- Fim Sobre o Projeto -->
+
+      <!-- Links Importantes -->
+      <div class="col-lg-2 col-6 footer-links">
+        <h4>Links</h4>
+        <ul>
+          <li><a href="#">Inicio</a></li>
+          <li><a href="#">Sobre Nós</a></li>
+          <li><a href="#">Termos de Uso</a></li>
+          <li><a href="#">Política de Privacidade</a></li>
+        </ul>
+      </div><!-- Fim dos Links -->
+
+      <!-- Contato no Rodapé -->
+      <div class="col-lg-2 col-6 footer-contact text-center text-md-start">
+        <h4>Contato</h4>
+        <p>Universidade Católica</p>
+        <p>Brasília - Distrito Federal</p>
+        <p><strong>Email:</strong> <span>ecotroca@gmail.com</span></p>
+        <p><strong>Telefone:</strong> <span>+55 61 9 9182-37081</span></p>
+      </div><!-- Fim Contato -->
+
+    </div>
+  </div>
+
+  <!-- Créditos -->
+  <div class="container copyright text-center mt-4">
+    <div class="creditos">
+      Desenvolvido por <a href="https://bootstrapmade.com/">Jefferson, João Flausino, João Morais & Lucas</a>
+    </div>
+  </div><!-- Fim Créditos -->
+
+</footer><!-- Fim do Rodapé -->
+
+<!-- Botão Scroll Top -->
+<a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center">
+  <i class="bi bi-arrow-up-short"></i>
+</a>
+
+<!-- Preloader -->
+<div id="preloader"></div>
+
+<!-- Arquivos JS dos Plugins -->
+<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="assets/vendor/php-email-form/validate.js"></script>
+<script src="assets/vendor/aos/aos.js"></script>
+<script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+<script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+<script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+<script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+<script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+
+<!-- Arquivo Principal JS -->
+<script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
